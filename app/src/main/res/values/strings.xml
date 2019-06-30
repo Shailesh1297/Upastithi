@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name"> Upस्थिthi</string>
+    <string name="title_activity_login">Login</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="student_tab">STUDENT</string>
+    <string name="teacher_tab">TEACHER</string>
 </resources>

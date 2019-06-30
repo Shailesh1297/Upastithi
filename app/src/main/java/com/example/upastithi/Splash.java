@@ -1,6 +1,7 @@
 package com.example.upastithi;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,6 +12,8 @@ import android.widget.*;
 public class Splash extends AppCompatActivity {
 
     ImageView splash;
+    boolean flag=true;
+    Handler handler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,22 +26,19 @@ public class Splash extends AppCompatActivity {
 
         splash=(ImageView)findViewById(R.drawable.upastithi);
 
-        Thread thread=new Thread()
-        {
-            public void run()
-            {
-                try {
-                    Thread.sleep(2000);
-                    Intent intent=new Intent(getApplicationContext(),Login.class);
-                    startActivity(intent);
-                }catch(Exception e)
-                {
-                    Log.d("Thread",e.toString());
-                }
+        handler=new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent=new Intent(getApplicationContext(),Login.class);
+                startActivity(intent);
+                finish();
             }
-        };
-        thread.start();
+        },3000);
+
+
+        }
 
 
     }
-}
+
