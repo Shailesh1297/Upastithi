@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student_Fragment">
+
+    <EditText
+        android:id="@+id/stuName"
+        android:layout_width="315dp"
+        android:layout_height="59dp"
+        android:layout_weight="1"
+        android:background="@drawable/layout_bg_white"
+        android:ems="10"
+        android:hint="Student id"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingRight="3dp"
+        android:translationX="30sp"
+        android:translationY="150sp" />
+
+    <EditText
+        android:id="@+id/stuPass"
+
+        android:layout_width="315dp"
+        android:layout_height="59dp"
+        android:layout_weight="1"
+        android:background="@drawable/layout_bg_white"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="3dp"
+
+        android:translationX="30sp"
+        android:translationY="250sp" />
+
+    <Button
+        android:id="@+id/stuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/layout_bg_darker"
+        android:text="LOGIN"
+
+        android:textColor="#FFFFFF"
+        android:translationX="130sp"
+        android:translationY="350sp" />
+</RelativeLayout>
